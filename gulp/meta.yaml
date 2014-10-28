@@ -1,0 +1,16 @@
+package:
+  name: gulp
+  version: 3.8.9
+
+requirements:
+  build:
+    - nodejs
+  run:
+    - nodejs
+
+test:
+  commands:
+    - gulp --version
+
+about:
+  home: http://gulpjs.com
