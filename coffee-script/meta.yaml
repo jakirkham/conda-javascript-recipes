@@ -1,0 +1,16 @@
+package:
+  name: coffee-script
+  version: 1.8.0
+
+requirements:
+  build:
+    - nodejs
+  run:
+    - nodejs
+
+test:
+  commands:
+    - coffee --version
+
+about:
+  home: http://coffeescript.org/
