@@ -6,7 +6,7 @@ build:
   number: 0
   binary_relocation: false
   has_prefix_files:                                             [win]
-    - Scripts\node-webkit.bat                                   [win]
+    - Scripts/node-webkit.bat                                   [win]
 
 source:
   fn: node-webkit-v0.11.5-linux-ia32.tar.gz                                     [linux32]
