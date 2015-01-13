@@ -1,0 +1,14 @@
+package: node-webkit
+user: javascript
+
+platform:
+  - linux-64
+  - linux-32
+  - win-64
+  - win-32
+  - osx-64
+
+script:
+  - conda build .
+
+build_targets: conda
