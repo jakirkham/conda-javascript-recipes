@@ -1,20 +1,20 @@
 package:
   name: nodejs
-  version: 0.10.33
+  version: 0.10.35
 
 build:
-  number: {{environ.get('BINSTAR_BUILD', 1)}}
+  number: 0
 
 source:
-  fn: node-v0.10.33-linux-x64.tar.gz [linux64]
-  url: http://nodejs.org/dist/v0.10.33/node-v0.10.33-linux-x64.tar.gz [linux64]
-  # sha:4eba69caf7368d7f388700eb02996f85b06f457a [linux64]
-  md5: 1efad7c248b453ee6c62a706f6f86dbe [linux64]
+  fn: node-v0.10.35-linux-x64.tar.gz [linux64]
+  url: http://nodejs.org/dist/v0.10.35/node-v0.10.35-linux-x64.tar.gz [linux64]
+  # sha: 3a202a749492e48542d2c28220e43ef6dae084bc [linux64]
+  md5: f3b33eed97772ce3a9341bbeb67511d7 [linux64]
 
-  fn: node-v0.10.33-darwin-x64.tar.gz [osx]
-  url: http://nodejs.org/dist/v0.10.33/node-v0.10.33-darwin-x64.tar.gz [osx]
-  # sha: 03e72005a4ed612aa7a984d840f148bfb76f3c5f [osx]
-  md5: 6fba8115b885c622d06683d75c676f48 [osx]
+  fn: node-v0.10.35-darwin-x64.tar.gz [osx]
+  url: http://nodejs.org/dist/v0.10.35/node-v0.10.35-darwin-x64.tar.gz [osx]
+  # sha: 98f61cb09685ed45f2db6e0fc5ccbdd273204091 [osx]
+  md5: 7d8e8de66e727e9bc51dead89a7b14cc [osx]
 
 test:
   commands:
