@@ -21,7 +21,7 @@ source:
   # sha: f390aeb7e5dc553c96afb498c613e8873f1c7a14f7e3f3c2a48e0141aa57eeb1 [osx]
   md5: 93aa8c16d0942c15cc5d7ecac81c2ef2 [osx]
 
-  url:
+  url: [win64]
     "https://iojs.org/dist/v1.0.3/win-x64/iojs.exe" [win64]
     "https://iojs.org/dist/v1.0.3/win-x64/iojs.lib" [win64]
 
