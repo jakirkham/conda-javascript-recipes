@@ -1,0 +1,12 @@
+package: iojs
+user: javascript
+
+platform:
+  - linux-32
+  - linux-64
+  - osx-64
+
+script:
+  - conda build .
+
+build_targets: conda
