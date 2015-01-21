@@ -5,7 +5,7 @@ package:
 build:
   number: 0
 
-source:
+source: [not win32 or win64]
   fn: iojs-v1.0.3-linux-x64.tar.gz [linux64]
   url: https://iojs.org/dist/v1.0.3/iojs-v1.0.3-linux-x64.tar.gz [linux64]
   # sha: 047b75b518767f0983c8159c9bb9a2939a214964ee127890e590af63f9082839 [linux64]
