@@ -1,4 +1,2 @@
-mkdir %PREFIX%\Scripts
-move %SRC_DIR%\iojs.exe %PREFIX%\Scripts
-move %SRC_DIR%\iojs.lib %PREFIX%\Scripts
+%PYTHON% win_download.py
 if errorlevel 1 exit 1
