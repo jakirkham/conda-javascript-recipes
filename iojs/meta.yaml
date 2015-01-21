@@ -5,7 +5,9 @@ package:
 build:
   number: 0
 
-source: [not win32 or win64]
+# Hack to keep from having an empty source on Windows
+{% if "HOME" in environ %}
+source:
   fn: iojs-v1.0.3-linux-x64.tar.gz [linux64]
   url: https://iojs.org/dist/v1.0.3/iojs-v1.0.3-linux-x64.tar.gz [linux64]
   # sha: 047b75b518767f0983c8159c9bb9a2939a214964ee127890e590af63f9082839 [linux64]
@@ -20,6 +22,7 @@ source: [not win32 or win64]
   url: https://iojs.org/dist/v1.0.3/iojs-v1.0.3-darwin-x64.tar.gz [osx]
   # sha: f390aeb7e5dc553c96afb498c613e8873f1c7a14f7e3f3c2a48e0141aa57eeb1 [osx]
   md5: 93aa8c16d0942c15cc5d7ecac81c2ef2 [osx]
+{% endif %}
 
 requirements:
   build:
