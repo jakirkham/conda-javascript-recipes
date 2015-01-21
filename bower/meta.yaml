@@ -4,9 +4,9 @@ package:
 
 requirements:
   build:
-    - nodejs
+    - iojs
   run:
-    - nodejs
+    - iojs
 
 test:
   commands:
