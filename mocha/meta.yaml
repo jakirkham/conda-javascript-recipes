@@ -1,0 +1,16 @@
+package:
+  name: mocha
+  version: 2.1.0
+
+requirements:
+  build:
+    - iojs
+  run:
+    - iojs
+
+test:
+  commands:
+    - mocha --version
+
+about:
+  home: http://mochajs.org/

@@ -1,0 +1,17 @@
+package: mocha
+user: javascript
+
+platform:
+  - linux-32
+  - linux-64
+  - osx-64
+  - win-32
+  - win-64
+
+install:
+  - conda config -f --add channels https://conda.binstar.org/javascript
+
+script:
+  - conda build .
+
+build_targets: conda
