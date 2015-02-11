@@ -1,6 +1,6 @@
 package:
   name: gulp
-  version: 3.8.10
+  version: 3.8.11
 
 requirements:
   build:
