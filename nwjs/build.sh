@@ -19,4 +19,16 @@ $PREFIX/node-webkit/Contents/MacOS/node-webkit "\$@"
 EOF
 fi
 
+if [[ (`uname` == Linux) ]]; then
+	mv $SRC_DIR/* $PREFIX/node-webkit
+	chmod +x $PREFIX/node-webkit/nw
+
+	cat <<EOF >$EXEC
+#!/bin/sh
+
+$PREFIX/node-webkit/nw "\$@"
+
+EOF
+fi
+
 chmod +x $EXEC
