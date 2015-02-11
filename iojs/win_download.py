@@ -4,13 +4,13 @@ from urllib import urlretrieve
 
 CHECKSUMS = {
     "x86": {
-        "iojs.exe": "47d67f1b828010a3472c84ec39b9f526e784d7c6707aa85aff371a8cf21049f8",
-        "iojs.lib": "7cbceda422a1df22760cef632d4db3b97ef9c4f508cccc494a7df8cf482ca9b3",
+        "iojs.exe": "f7fe7d4d716e4a8fda72b4c162e785a84e7650d27d49d02fff57164fe38404e1",
+        "iojs.lib": "c50d5a3716f88d58f4604a39e1209bc321528237f3fed1a5bdb5acf535b23cb2",
     },
 
     "x64": {
-        "iojs.exe": "114b92aa8061dae6b8443694bbba2aabb100aff81ab6508064afddc5af237eb0",
-        "iojs.lib": "95ff61556461cb8f864d9958889e9387cd58961e466c1f73b67203acefbf2c26",
+        "iojs.exe": "08c40c11df9a4d8e096e929ad16855ba13669672e368d7de670331ea44cac2d1",
+        "iojs.lib": "53cd9d149d6517383e2e4c003c08bfb0790f977ebf8f240f45b61247a40b9919",
     }
 
 }
@@ -20,7 +20,7 @@ ARCH = {
     "64": "x64",
 }[os.environ["ARCH"]]
 
-ROOT_URL = "https://iojs.org/dist/v1.0.3/win-{}/".format(ARCH)
+ROOT_URL = "https://iojs.org/dist/v1.2.0/win-{}/".format(ARCH)
 FILES = ["iojs.exe", "iojs.lib"]
 TARGET_DIR = os.path.join(os.environ["PREFIX"], "Scripts")
 if not os.path.exists(TARGET_DIR):
