@@ -1,0 +1,10 @@
+package: nwjs
+user: javascript
+
+platform:
+  - osx-64
+
+script:
+  - conda build .
+
+build_targets: conda

@@ -1,0 +1,24 @@
+package:
+  name: nw.js
+  version: 0.11.6
+
+source:
+  fn: node-webkit-v0.11.6-linux-x64.tar.gz [linux64]
+  url: http://dl.node-webkit.org/v0.11.6/node-webkit-v0.11.6-linux-x64.tar.gz [linux64]
+  md5: a31070c6ee4a1211eff93d1197f0cc06 [linux64]
+
+  fn: node-webkit-v0.11.6-osx-x64.zip [osx]
+  url: http://dl.node-webkit.org/v0.11.6/node-webkit-v0.11.6-osx-x64.zip [osx]
+  md5: c9983e17d8f053938cdda7d0a8139e89 [osx]
+
+  fn: node-webkit-v0.11.6-win-x64.zip [win]
+  url: http://dl.node-webkit.org/v0.11.6/node-webkit-v0.11.6-win-x64.zip [win]
+  md5: d164c52a77d5d95fc2de3212b9590885 [win]
+
+test:
+  commands:
+    - which -s node-webkit
+
+about:
+  home: http://nwjs.io/
+  license: MIT
