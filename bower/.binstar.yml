@@ -12,7 +12,7 @@ install:
   - conda config -f --add channels https://conda.binstar.org/javascript
 
 engine:
-  - python=2
+  - python=3
 
 script:
   - conda build .
