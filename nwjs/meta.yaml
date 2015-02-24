@@ -17,7 +17,7 @@ source:
 
 test:
   commands:
-    - which -s node-webkit
+    - which -s node-webkit [osx and linux]
 
 about:
   home: http://nwjs.io/
