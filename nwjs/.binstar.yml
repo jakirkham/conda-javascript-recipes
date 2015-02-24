@@ -8,6 +8,9 @@ platform:
   - win-64
   # - win-32
 
+env:
+  - {PYTHONUNBUFFERED: '1'}
+
 script:
   - conda build .
 
