@@ -3,7 +3,7 @@ CALL npm install -g --upgrade npm@next
 CALL npm install -g fenestrate
 CALL npm install -g %PKG_NAME%@%PKG_VERSION%
 
-CALL cd %PREFIX%/bower
+CALL cd %PREFIX%\node_modules\bower
 CALL fenestrate make .
 CALL fenestrate rewrite .
 
