@@ -1,32 +1,32 @@
 #!/bin/sh
 
 BIN=$PREFIX/bin
-EXEC=$BIN/node-webkit
+EXEC=$BIN/nwjs
 
 mkdir -p $BIN
-mkdir -p $PREFIX/node-webkit
+mkdir -p $PREFIX/nwjs
 
 if [[ (`uname` == Darwin) ]]; then
-	mv $SRC_DIR/node-webkit.app/* $PREFIX/node-webkit
-	rm $PREFIX/node-webkit/Contents/Info.plist
+	mv $SRC_DIR/nwjs.app/* $PREFIX/nwjs
+	rm $PREFIX/nwjs/Contents/Info.plist
 
-	chmod +x $PREFIX/node-webkit/Contents/MacOS/node-webkit
+	chmod +x $PREFIX/nwjs/Contents/MacOS/nwjs
 	cat <<EOF >$EXEC
 #!/bin/sh
 
-$PREFIX/node-webkit/Contents/MacOS/node-webkit "\$@"
-
+$PREFIX/nwjs/Contents/MacOS/nwjs "\$@"
 EOF
+
 fi
 
 if [[ (`uname` == Linux) ]]; then
-	mv $SRC_DIR/* $PREFIX/node-webkit
-	chmod +x $PREFIX/node-webkit/nw
+	mv $SRC_DIR/* $PREFIX/nwjs
+	chmod +x $PREFIX/nwjs/nw
 
 	cat <<EOF >$EXEC
 #!/bin/sh
 
-$PREFIX/node-webkit/nw "\$@"
+$PREFIX/nwjs/nw "\$@"
 
 EOF
 fi
