@@ -1,7 +1,7 @@
 mkdir "%PREFIX%\nwjs"
 if errorlevel 1 exit 1
 
-xcopy /E "%SRC_DIR%/*" "%PREFIX%\nwjs\"
+xcopy /E .\* "%PREFIX%\nwjs\"
 if errorlevel 1 exit 1
 
 mkdir "%SCRIPTS%"
