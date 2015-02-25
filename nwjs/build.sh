@@ -7,10 +7,14 @@ mkdir -p $BIN
 mkdir -p $PREFIX/nwjs
 
 if [[ (`uname` == Darwin) ]]; then
-	mv $SRC_DIR/nwjs.app/* $PREFIX/nwjs
+	# Ensure permissions are perserved
+	cp -Rp $SRC_DIR/nwjs.app/* $PREFIX/nwjs
 	rm $PREFIX/nwjs/Contents/Info.plist
 
 	chmod +x $PREFIX/nwjs/Contents/MacOS/nwjs
+	chmod +x "$PREFIX/nwjs/Contents/Frameworks/nwjs Helper EH.app/Contents/MacOS/nwjs Helper EH"
+	chmod +x "$PREFIX/nwjs/Contents/Frameworks/nwjs Helper EH.app/Contents/MacOS/nwjs Helper EH"
+	chmod +x "$PREFIX/nwjs/Contents/Frameworks/nwjs Helper.app/Contents/MacOS/nwjs Helper"
 	cat <<EOF >$EXEC
 #!/bin/sh
 
@@ -20,7 +24,7 @@ EOF
 fi
 
 if [[ (`uname` == Linux) ]]; then
-	mv $SRC_DIR/* $PREFIX/nwjs
+	cp -Rp $SRC_DIR/* $PREFIX/nwjs
 	chmod +x $PREFIX/nwjs/nw
 
 	cat <<EOF >$EXEC

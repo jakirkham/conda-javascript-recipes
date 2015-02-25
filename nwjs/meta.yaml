@@ -2,6 +2,9 @@ package:
   name: nwjs
   version: 0.12.0.3alpha
 
+build:
+  number: 1
+
 source:
   fn: nwjs-v0.12.0-alpha3-linux-x64.tar.gz [linux64]
   url: http://dl.nwjs.io/v0.12.0-alpha3/nwjs-v0.12.0-alpha3-linux-x64.tar.gz [linux64]
