@@ -1,0 +1,36 @@
+package:
+  name: nwjs
+  version: 0.12.0.3alpha
+
+build:
+  number: 1
+
+source:
+  fn: nwjs-v0.12.0-alpha3-linux-x64.tar.gz [linux64]
+  url: http://dl.nwjs.io/v0.12.0-alpha3/nwjs-v0.12.0-alpha3-linux-x64.tar.gz [linux64]
+  md5: f504cb77d662cb11bcc5abbf44f00dfc [linux64]
+
+  fn: nwjs-v0.12.0-alpha3-linux-ia32.tar.gz [linux32]
+  url: http://dl.nwjs.io/v0.12.0-alpha3/nwjs-v0.12.0-alpha3-linux-ia32.tar.gz [linux32]
+  md5: 37ad4eb4f1964e3daa0f4afce357fb7e [linux32]
+
+  fn: nwjs-v0.12.0-alpha3-osx-x64.zip [osx]
+  url: http://dl.nwjs.io/v0.12.0-alpha3/nwjs-v0.12.0-alpha3-osx-x64.zip [osx]
+  md5: 5ecf557f82b0f072e51cb72382c16056 [osx]
+
+  fn: nwjs-v0.12.0-alpha3-win-x64.zip [win64]
+  url: http://dl.nwjs.io/v0.12.0-alpha3/nwjs-v0.12.0-alpha3-win-x64.zip [win64]
+  md5: 2b5946e837784e8b69a772fa4e5de0cc [win64]
+
+  fn: nwjs-v0.12.0-alpha3-win-ia32.zip [win32]
+  url: http://dl.nwjs.io/v0.12.0-alpha3/nwjs-v0.12.0-alpha3-win-ia32.zip [win32]
+  md5: a1df37dec5774e67d5e7beaaf5887138 [win32]
+
+
+test:
+  commands:
+    - which -s node-webkit [osx and linux]
+
+about:
+  home: http://nwjs.io/
+  license: MIT
