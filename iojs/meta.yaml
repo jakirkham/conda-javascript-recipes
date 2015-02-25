@@ -8,12 +8,10 @@ build:
 source:
   fn: iojs-v1.3.0-linux-x64.tar.gz [linux64]
   url: https://iojs.org/dist/v1.3.0/iojs-v1.3.0-linux-x64.tar.gz [linux64]
-  # sha: 047b75b518767f0983c8159c9bb9a2939a214964ee127890e590af63f9082839 [linux64]
   md5: 97acb3c0e5e85c6b2f1f21445b3618ed [linux64]
 
   fn: iojs-v1.3.0-linux-x86.tar.gz [linux32]
   url: https://iojs.org/dist/v1.3.0/iojs-v1.3.0-linux-x86.tar.gz [linux32]
-  # sha: 7c2d64056b430ebfc46a4f14039d21c1f7fb3fc0c8932eb9da94820e1fee4d1b [linux32]
   md5: f08e22b88a3604a0d7805f079b79d895 [linux32]
 
   fn: iojs-v1.3.0-darwin-x64.tar.gz [osx]
