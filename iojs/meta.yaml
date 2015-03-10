@@ -27,7 +27,7 @@ source:
 
 requirements:
   build:
-    - python [win32 and win64]
+    - python [win]
 
 test:
   commands:
