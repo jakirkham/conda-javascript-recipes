@@ -1,25 +1,25 @@
 package:
   name: iojs
-  version: 1.0.3
+  version: 1.2.0
 
 build:
   number: 0
 
 source:
-  fn: iojs-v1.0.3-linux-x64.tar.gz [linux64]
-  url: https://iojs.org/dist/v1.0.3/iojs-v1.0.3-linux-x64.tar.gz [linux64]
-  # sha: 047b75b518767f0983c8159c9bb9a2939a214964ee127890e590af63f9082839 [linux64]
-  md5: d49fa446dcd3591d251ed6b78dd83205 [linux64]
+  fn: iojs-v1.2.0-linux-x64.tar.gz [linux64]
+  url: https://iojs.org/dist/v1.2.0/iojs-v1.2.0-linux-x64.tar.gz [linux64]
+  # sha: bf475addb9e549f7005d61c13acdbefcf1e8e0fc60c73448c9baedc9795910fa [linux64]
+  md5: 4f0da8d22a9646ae5f94ac1f20574144 [linux64]
 
-  fn: iojs-v1.0.3-linux-x86.tar.gz [linux32]
-  url: https://iojs.org/dist/v1.0.3/iojs-v1.0.3-linux-x86.tar.gz [linux32]
-  # sha: 7c2d64056b430ebfc46a4f14039d21c1f7fb3fc0c8932eb9da94820e1fee4d1b [linux32]
-  md5: 39070179500fbaf17598f5730b954530 [linux32]
+  fn: iojs-v1.2.0-linux-x86.tar.gz [linux32]
+  url: https://iojs.org/dist/v1.2.0/iojs-v1.2.0-linux-x86.tar.gz [linux32]
+  # sha: 4d2d9a158fb4aff30dd3b7c354d084d95b7ba43fc3bb7dfd77284934e390ef85 [linux32]
+  md5: 04c4660a4a36df0ed8f1fd7f5ba6dd73 [linux32]
 
-  fn: iojs-v1.0.3-darwin-x64.tar.gz [osx]
-  url: https://iojs.org/dist/v1.0.3/iojs-v1.0.3-darwin-x64.tar.gz [osx]
-  # sha: f390aeb7e5dc553c96afb498c613e8873f1c7a14f7e3f3c2a48e0141aa57eeb1 [osx]
-  md5: 93aa8c16d0942c15cc5d7ecac81c2ef2 [osx]
+  fn: iojs-v1.2.0-darwin-x64.tar.gz [osx]
+  url: https://iojs.org/dist/v1.2.0/iojs-v1.2.0-darwin-x64.tar.gz [osx]
+  # sha: 07fcc65f3c6e7ecd45f9139c67c5c904226247f6f9da57b88478153b8db21d63 [osx]
+  md5: 574ef2a04e43c75714dd047780162c98 [osx]
 
   fn: v2.2.0.tar.gz [win]
   url: https://github.com/npm/npm/archive/v2.2.0.tar.gz [win]
