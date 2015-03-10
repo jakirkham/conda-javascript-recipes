@@ -3,7 +3,7 @@ package:
   version: 1.2.0
 
 build:
-  number: 0
+  number: 1
 
 source:
   fn: iojs-v1.2.0-linux-x64.tar.gz [linux64]

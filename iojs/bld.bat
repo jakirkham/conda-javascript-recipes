@@ -4,6 +4,5 @@ mkdir %PREFIX%\Scripts\node_modules
 mkdir %PREFIX%\Scripts\node_modules\npm
 xcopy /E * %PREFIX%\Scripts\node_modules\npm
 python %RECIPE_DIR%\win_download.py
-copy %PREFIX%\Scripts\iojs.exe %PREFIX%\Scripts\node.exe
-copy %PREFIX%\Scripts\iojs.lib %PREFIX%\Scripts\node.lib
+ECHO %PREFIX%\Scripts\node.cmd @"%~dp0\iojs.exe" %%*
 if errorlevel 1 exit 1
