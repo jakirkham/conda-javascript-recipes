@@ -28,7 +28,6 @@ source:
 requirements:
   build:
     - python [win]
-    - requests [win]
 
 test:
   commands:
