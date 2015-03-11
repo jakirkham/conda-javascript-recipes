@@ -1,6 +1,7 @@
 import hashlib
 import os
-from urllib import urlretrieve
+
+import requests
 
 CHECKSUMS = {
     "x86": {
@@ -29,8 +30,12 @@ if not os.path.exists(TARGET_DIR):
 for filename in FILES:
     url = "{}{}".format(ROOT_URL, filename)
     full_filename = os.path.join(TARGET_DIR, filename)
-    urlretrieve(url, full_filename)
+    response = requests.get(url)
+    sha256 = hashlib.sha256()
+    with open(full_filename, "wb") as f:
+        contents = response.content
+        sha256.update(contents)
+        f.write(contents)
 
-    with open(full_filename, "rb") as f:
-        contents = f.read()
-    assert hashlib.sha256(contents).hexdigest() == CHECKSUMS[ARCH][filename]
+    assert sha256.hexdigest() == CHECKSUMS[ARCH][filename]
+    del contents
