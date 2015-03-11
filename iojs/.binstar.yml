@@ -9,6 +9,7 @@ platform:
   - win-32
 
 script:
+  - conda update conda requests --yes --quiet
   - conda build .
 
 build_targets: conda
