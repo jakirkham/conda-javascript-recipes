@@ -9,6 +9,7 @@ platform:
   - win-32
 
 script:
+  - conda install --quiet --yes requests openssl
   - conda list
   - conda build .
 
