@@ -4,6 +4,7 @@ package:
 
 requirements:
   build:
+    - npm
     - iojs
   run:
     - iojs
